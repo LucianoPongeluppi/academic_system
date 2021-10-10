@@ -1,0 +1,157 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    transition: all 300ms ease-in-out;
+    background: red;
+}
+h1:hover{
+    background: blue;
+}
+#nome{
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: overline;
+    text-indent: 30px;
+    text-shadow: -1px -1px 2px red;
+    text-transform: capitalize;
+}
+label {
+    cursor: pointer;
+}
+table{
+    border-collapse: collapse;
+    width: 800px;
+}
+a{
+    color: blue;
+}
+a:link {
+    color: orange;
+}
+a:visited{
+    color: purple;
+}
+a:active{
+    color: red;
+}
+p::first-letter{
+    font-size: 20px;
+}
+p::selection{
+    background-color: black;
+    color: white;
+}
+::placeholder{
+    color: green;
+    font-style: italic;
+}
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+    background: grey;
+}
+input:disabled{
+    background-color: red;
+    cursor: not-allowed;
+}
+input:enable{
+    color: blue;
+}
+input:checked{
+    width: 40px;
+    height: 40px;
+}
+input:not(:checked){
+    width: 20px;
+    height: 30px;
+}
+input:checked + label{
+    background: green;
+}
+caption{
+    caption-side: bottom;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    margin: 5px 0;
+}
+table td, table th{
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+}
+tfoot tr{
+    background: #ddd;
+}
+tfoot tr td{
+    background: #ccc;
+    font-style: italic;
+}
+.responsive-table{
+    width: 100%;
+    overflow-x: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: red;
+}
+
+ul li:nth-child(2){
+    background-color: yellow;
+}
+ul li:nth-child(2n+5){
+    background-color: orange;
+}
+ul li:nth-child(even){
+    color: blue;
+}
+ul li:nth-child(odd){
+    color: red;
+}
+ul li::after{
+    content: ' - ';
+    background-color: white;
+    color: black;
+}
+ul li::before{
+    content: '*';
+}
+div.tamanho{
+    box-sizing: border-box;
+    background: red;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 400px;
+    min-width: 100px;
+    min-height: 100px;
+    overflow-y: auto;
+    overflow-x: scroll;
+    margin: 0 auto;
+    border-radius: 10px 0 0 0;
+    box-shadow: inset -5px -5px 15px 5px blue, 2px -5px 5px 4px red;
+}
+/*
+p input.className{}
+h2.className{}
+.pai.filha{} aplica o css para elementos que tem as duas classes
+.pai .filha{} aplica o css para o elemento filha que tenha um pai
+.pai>.filha>.filhadafilha{} faz o caminho exato que foi declarado para aplicar o css
+.pai p+h1{} seleciona o primeiro elemento h1 após o p dentro da classe pai
+.pai p~h1{} seleciona todos os elementos h1 após o p dentro da classe pai
+alguns elementos por padrao herdam o css do pai, então utilizar esses artificios auxiliam a aplicar à um elemento especifico
+[meu-atributo]{} para aplicar o css em um atributo criado por mim ou qualquer outro atributo
+[meu-atributo="valor"] ele pode ser dependente de um valor também
+[meu-atributo~="valor"] se o elemento tiver uma classe com o nome valor, independente de sua ordem
+[meu-atributo|="valor"] se a primeira classe começar com "valor" e for seguida por um hifen
+[meu-atributo^="va"] se o nome da classe inicial com aquela cadeia de caracteres
+[meu-atributo$="or"] termina com
+[meu-atributo*="al" contem
+
+*/
